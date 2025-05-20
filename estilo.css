@@ -1,0 +1,180 @@
+/* Estilos Gerais para a página toda */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Estilos para o cabeçalho lá em cima */
+#cabecalho_superior {
+    background-color: #3366ff;
+    color: white;
+    padding: 10px;
+}
+
+#cabecalho_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#menu_de_navegacao {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu_de_navegacao li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#menu_de_navegacao a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menu_de_navegacao a:hover {
+    color: #3366ff;
+    background-color: white;
+}
+
+#titulo_do_site {
+    color: white;
+    transition: color 0.3s;
+}
+
+#titulo_do_site:hover {
+    color: #ffff00;
+}
+
+/* Estilos para o conteúdo principal e a barra lateral */
+#conteudo_principal {
+    display: flex;
+    max-width: 960px;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+#conteudo_esquerdo {
+    width: 65%;
+}
+
+#conteudo_direito {
+    width: 30%;
+}
+
+/* Estilos para cada caixa de postagem */
+.caixa_de_postagem {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888888;
+    display: none; /* Esconde as seções por padrão */
+}
+
+.caixa_de_postagem.mostrar { /* Classe para mostrar a seção */
+    display: block;
+}
+
+.titulo_da_postagem {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.data_da_postagem {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.caixa_de_postagem img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.link_leia_mais {
+    display: block;
+    margin-top: 10px;
+    color: #3366ff;
+    text-decoration: none;
+}
+
+/* Estilos para as caixas da barra lateral */
+.caixa_lateral {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.caixa_lateral h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.item_da_lista_lateral {
+    margin-bottom: 10px;
+}
+
+.link_leia_mais_lateral {
+    display: block;
+    margin-top: 5px;
+    color: #3366ff;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#lista_de_categorias {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para o formulário */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #444444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #666666;
+}
+
+/* Estilos para o rodapé lá embaixo */
+#rodape_inferior {
+    background-color: #dddddd;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
